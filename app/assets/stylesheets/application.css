@@ -14,18 +14,52 @@
  *= require_self
  */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+}
+
 body {
   margin:30px;
 }
 
-/*表の隙間を調整*/
-td {
-  padding: 0 5px 10px 5px;
+.top-message {
+  margin: 30px 0 30px 30px;
 }
 
+.top-message p {
+  margin-bottom: 30px;
+}
+
+.books-title {
+  margin-bottom: 15px;
+}
+
+/*表を調整*/
+th {
+  font-size: 12px;
+}
+
+td {
+  padding: 7px 15px 7px 0px;
+  font-size: 12px;
+}
+
+table {
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
 
 .show-contents {
   margin: 20px;
 }
 
-
+/*サクセスメッセージ色変更*/
+.flash {
+  color: green;
+}
