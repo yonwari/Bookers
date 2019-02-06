@@ -1,0 +1,16 @@
+<body>
+  <h1>Editting Book</h1>
+<!-- 編集フォーム -->
+  <%= form_for(@book) do |f| %>
+    <p>Title</p>
+    <%= f.text_field :title, class:"book_title" %>
+    <p>Body</p>
+    <%= f.text_area :body, class:"book_body" %>
+    <br>
+    <%= f.submit 'Update Book' %>
+  <% end %>
+<!-- リンク -->
+  <%= link_to 'Show', book_path(@book.id), class:"show_#{@book.id}"%>
+  <%= link_to 'Back', books_path, class:"back" %>
+</body>
+

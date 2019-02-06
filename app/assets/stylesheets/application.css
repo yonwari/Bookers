@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  margin:30px;
+}
+
+/*表の隙間を調整*/
+td {
+  padding: 0 5px 10px 5px;
+}
+
+
+.show-contents {
+  margin: 20px;
+}
+
+
